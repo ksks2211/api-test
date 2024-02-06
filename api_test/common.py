@@ -11,6 +11,9 @@ def to_json(data):
         data = asdict(data)    
     return json.dumps(data, indent=4)
 
+def save_dict_as_json(data:dict, location:str) -> None:
+    json_str = to_json(data)
+    save_json(json_str=json_str, location=location)
 
 def save_json(json_str:str, location:str)->None:
     os.makedirs(os.path.dirname(location), exist_ok=True)
