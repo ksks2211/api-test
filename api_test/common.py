@@ -1,4 +1,6 @@
 from dataclasses import asdict, is_dataclass
+from datetime import datetime
+
 import json
 import os
 
@@ -22,5 +24,13 @@ def save_json(json_str:str, location:str)->None:
     with open(location, 'w', encoding='utf-8') as f:
         f.write(json_str)
         print(f"JSON saved to {location}")    
+
+
+def current_datetime_mod(include_time=False):
+    """Return a string of the current date, and optionally time, with custom separator."""
+    format_str = "%Y-%m-%d"
+    if include_time:
+        format_str += "T%H:%M:%S"  # Using 'T' as a separator between date and time.
+    return datetime.now().strftime(format_str)
 
     

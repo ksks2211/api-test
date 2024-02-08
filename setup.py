@@ -7,5 +7,5 @@ setup(
     description="API test",
     url="https://github.com/ksks2211/api-test",
     packages=find_packages(),
-    install_requires=["requests" "python-dotenv"],
+    install_requires=["requests","python-dotenv","elasticsearch"],
 )

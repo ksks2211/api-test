@@ -9,7 +9,5 @@ print(f"{quote['text']} - {quote['author']}")
 
 json_str = to_json(quotes)
 
-location = './quotes.json'
+location = './tests/quotes.json'
 save_json(json_str=json_str, location=location)
-
-# 
