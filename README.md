@@ -1,6 +1,6 @@
 # api-test
 
-`api-test` is a Python library designed for personal use to facilitate learning, testing, and experimenting with RESTful APIs. It includes simple use cases of RESTful APIs.
+`api-test` is a Python library designed for personal use to facilitate learning, testing, and experimenting with APIs. It includes simple use cases of APIs.
 
 ## Installation
 

@@ -35,7 +35,7 @@ class Sys(TypedDict):
     sunset:str
     
 
-class Response(TypedDict):
+class WeatherResponse(TypedDict):
     coord:Coord
     weather:Weather
     base:str
@@ -48,7 +48,9 @@ class Response(TypedDict):
     timezone:float
     id:int
     name:str
-    code:int
+    cod:int
     
-    
-def get_weather_by_city(city:str) -> Response :...    
+
+def get_weather_by_lat_and_lon(lat:float, lon:float) -> WeatherResponse:...
+
+def get_weather_by_city(city:str) -> WeatherResponse :...    

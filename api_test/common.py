@@ -7,7 +7,6 @@ import os
 def formatted_json(data:any):
     return json.dumps(data,indent=4, ensure_ascii=False)
 
-
 def to_json(data):
     if is_dataclass(data):
         data = asdict(data)    
@@ -25,12 +24,9 @@ def save_json(json_str:str, location:str)->None:
         f.write(json_str)
         print(f"JSON saved to {location}")    
 
-
 def current_datetime_mod(include_time=False):
     """Return a string of the current date, and optionally time, with custom separator."""
     format_str = "%Y-%m-%d"
     if include_time:
         format_str += "T%H:%M:%S"  # Using 'T' as a separator between date and time.
     return datetime.now().strftime(format_str)
-
-    
