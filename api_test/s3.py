@@ -9,6 +9,7 @@ AWS_BUCKET_NAME=get_api_key('AWS_BUCKET_NAME')
 
 s3_client = boto3.client('s3',aws_access_key_id=AWS_ACCESS_KEY, aws_secret_access_key=AWS_SECRET_KEY)
 
+
 def upload(filename:str,key:str, bucket=AWS_BUCKET_NAME):
     s3_client.upload_file(filename, bucket, key)
 

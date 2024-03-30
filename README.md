@@ -1,6 +1,6 @@
 # api-test
 
-`api-test` is a Python library designed for personal use to facilitate learning, testing, and experimenting with APIs. It includes simple use cases of APIs.
+`api-test` is a Python library designed for personal use to facilitate learning, testing, and experimenting with a wide range of APIs, including both open APIs (like weather services) and proprietary API services (such as AWS S3, Elasticsearch, etc.). 
 
 ## Installation
 
